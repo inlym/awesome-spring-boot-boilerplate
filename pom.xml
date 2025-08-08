@@ -11,7 +11,7 @@
     <packaging>pom</packaging>
 
     <modules>
-
+        <module>project-common</module>
     </modules>
 
     <name>${project.artifactId}</name>
