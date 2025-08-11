@@ -9,7 +9,7 @@
         <version>${revision}</version>
     </parent>
 
-    <artifactId>project-demo</artifactId>
+    <artifactId>project-integration</artifactId>
 
     <name>${project.artifactId}</name>
     <description>用于功能代码演示</description>
