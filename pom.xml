@@ -14,6 +14,7 @@
         <module>project-common</module>
         <module>project-integration</module>
         <module>project-demo</module>
+        <module>project-hello</module>
         <module>project-web</module>
     </modules>
 
@@ -162,6 +163,11 @@
             <dependency>
                 <groupId>com.inlym</groupId>
                 <artifactId>project-demo</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.inlym</groupId>
+                <artifactId>project-hello</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>
