@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.inlym</groupId>
+        <artifactId>awesome-spring-boot-boilerplate</artifactId>
+        <version>${revision}</version>
+    </parent>
+
+    <artifactId>project-web</artifactId>
+    <packaging>jar</packaging>
+
+    <name>${project.artifactId}</name>
+    <description>Web 应用入口</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.inlym</groupId>
+            <artifactId>project-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.inlym</groupId>
+            <artifactId>project-integration</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.inlym</groupId>
+            <artifactId>project-demo</artifactId>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <!-- 设置构建的 jar 包名 -->
+        <finalName>${project.artifactId}</finalName>
+
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

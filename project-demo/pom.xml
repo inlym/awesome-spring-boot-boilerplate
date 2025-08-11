@@ -9,9 +9,9 @@
         <version>${revision}</version>
     </parent>
 
-    <artifactId>project-common</artifactId>
+    <artifactId>project-demo</artifactId>
 
     <name>${project.artifactId}</name>
-    <description>通用子模块</description>
+    <description>用于功能代码演示</description>
 
 </project>
